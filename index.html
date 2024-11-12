@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Resume Builder</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/create.css">
+    </head>
+
+<body>
+
+    <div class="mainDiv">
+        <form>
+            <div class="headline">
+                <h2>Personal Information</h2>
+            </div>
+
+            <!-- Image File Input -->
+            <div class="input-label">
+                <label for="profileImage">Upload Profile Picture</label>
+                <input type="file" id="profileImage" accept="image/*">
+            </div>
+
+            <div class="input-group">
+                <div class="input-label">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="input-label">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+            <div class="input-label">
+                <label for="designation">Designation</label>
+                <input class="input" id="designation" type="text" required>
+            </div>
+            <div class="textarea-label">
+                <label for="yourself">Description</label>
+                <textarea id="yourself" required></textarea>
+            </div>
+
+            <div class="input-label">
+                <label for="phoneNumber">Mobile Number</label>
+                <input class="input" id="phoneNumber" type="text" required>
+            </div>
+            <div class="input-label">
+                <label for="email">Email</label>
+                <input class="input" id="email" type="email" required>
+            </div>
+            <div class="input-label">
+                <label for="linkedin">LinkedIn</label>
+                <input class="input" id="linkedin" type="text" required>
+            </div>
+            <div class="input-label">
+                <label for="address">Address</label>
+                <input class="input" id="address" type="text" required>
+            </div>
+
+            <div class="headline">
+                <h2>Educational Journey</h2>
+            </div>
+            <div class="education-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="edu-year-1">Education Year</label>
+                        <input type="text" id="edu-year-1" placeholder="e.g., 2020 - 2024" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-degree-1">Degree</label>
+                        <input type="text" id="edu-degree-1" placeholder="e.g., Bachelor of Science" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-institute-1">Institute</label>
+                        <input type="text" id="edu-institute-1" placeholder="e.g., University Name" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="edu-year-2">Education Year</label>
+                        <input type="text" id="edu-year-2" placeholder="e.g., 2016 - 2020" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-degree-2">Degree</label>
+                        <input type="text" id="edu-degree-2" placeholder="e.g., High School Diploma" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-institute-2">Institute</label>
+                        <input type="text" id="edu-institute-2" placeholder="e.g., School Name" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headline">
+                <h2>Languages</h2>
+            </div>
+
+            <div class="language-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="language-1">Language</label>
+                        <input type="text" id="language-1" placeholder="e.g., English" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="proficiency-1">Proficiency (%)</label>
+                        <input type="number" id="proficiency-1" placeholder="e.g., 80" min="0" max="100" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="language-2">Language</label>
+                        <input type="text" id="language-2" placeholder="e.g., Urdu" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="proficiency-2">Proficiency (%)</label>
+                        <input type="number" id="proficiency-2" placeholder="e.g., 70" min="0" max="100" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headline">
+                <h2>Experience</h2>
+            </div>
+
+            <div class="experience-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="job-title-1">Job Title</label>
+                        <input type="text" id="job-title-1" placeholder="e.g., Software Engineer" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="company-desc-1">Company & Description</label>
+                        <input type="text" id="company-desc-1" placeholder="e.g., ABC Corp - Description" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="years-1">Years</label>
+                        <input type="text" id="years-1" placeholder="e.g., 2019-2022" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="job-title-2">Job Title</label>
+                        <input type="text" id="job-title-2" placeholder="e.g., Frontend Developer" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="company-desc-2">Company & Description</label>
+                        <input type="text" id="company-desc-2" placeholder="e.g., XYZ Ltd - Description" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="years-2">Years</label>
+                        <input type="text" id="years-2" placeholder="e.g., 2017-2019" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="job-title-3">Job Title</label>
+                        <input type="text" id="job-title-3" placeholder="e.g., Intern" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="company-desc-3">Company & Description</label>
+                        <input type="text" id="company-desc-3" placeholder="e.g., DEF Inc - Description" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="years-3">Years</label>
+                        <input type="text" id="years-3" placeholder="e.g., 2016-2017" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="headline">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-1">Skill</label>
+                        <input type="text" id="skill-1" placeholder="e.g., JavaScript" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-1">Proficiency (%)</label>
+                        <input type="number" id="skill-level-1" placeholder="e.g., 90" min="0" max="100" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-2">Skill</label>
+                        <input type="text" id="skill-2" placeholder="e.g., React" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-2">Proficiency (%)</label>
+                        <input type="number" id="skill-level-2" placeholder="e.g., 85" min="0" max="100" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-3">Skill</label>
+                        <input type="text" id="skill-3" placeholder="e.g., Node.js" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-3">Proficiency (%)</label>
+                        <input type="number" id="skill-level-3" placeholder="e.g., 80" min="0" max="100" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-4">Skill</label>
+                        <input type="text" id="skill-4" placeholder="e.g., Python" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-4">Proficiency (%)</label>
+                        <input type="number" id="skill-level-4" placeholder="e.g., 75" min="0" max="100" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-5">Skill</label>
+                        <input type="text" id="skill-5" placeholder="e.g., Python" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-5">Proficiency (%)</label>
+                        <input type="number" id="skill-level-5" placeholder="e.g., 75" min="0" max="100" required>
+                    </div>
+                </div>
+            </div>
+
+                <button class="generate" type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
